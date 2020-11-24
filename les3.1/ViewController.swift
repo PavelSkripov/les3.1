@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func changeColorAndHeight(_ sender: UIButton) {
-        rectangleTopAchor?.constant = 200
+        rectangleTopAchor?.constant = 150
         isActive = !isActive
         rect.backgroundColor = isActive ? .orange : .gray
         

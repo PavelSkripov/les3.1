@@ -16,10 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-qv-Dv7" customClass="PrimaryButton" customModule="les3_1" customModuleProvider="target">
-                                <rect key="frame" x="107" y="418" width="200" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgN-qv-Dv7" customClass="PrimaryButton" customModule="les3_1" customModuleProvider="target">
+                                <rect key="frame" x="107" y="423" width="200" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0ar-yS-WZb"/>
+                                    <constraint firstAttribute="width" constant="200" id="EEM-L5-o27"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemOrangeColor"/>
@@ -39,13 +42,17 @@
                                     <action selector="changeColorAndHeight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xpR-le-ZnB"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-Ta-1HJ">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Pb-Ta-1HJ">
                                 <rect key="frame" x="87" y="114" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OgN-qv-Dv7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ADZ-zx-ey1"/>
+                            <constraint firstItem="OgN-qv-Dv7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="tam-0A-wcV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="rect" destination="9Pb-Ta-1HJ" id="aka-FB-MNm"/>
